@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import PropTypes from 'prop-types'
-import getThemeColor from '@utils/getThemeColor'
+import getThemeColor from 'utils/getThemeColor'
 import Icons from './Icons'
 
 import * as S from './styled'

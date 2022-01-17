@@ -2,7 +2,10 @@ import React from 'react'
 
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { LayoutCustom, PostCard, Pagination, Seo } from '@components'
+import LayoutCustom from 'components/LayoutCustom'
+import PostCard from 'components/PostCard'
+import Pagination from 'components/Pagination'
+import Seo from 'components/Seo'
 
 const BlogList = ({ ...props }) => {
   const postList = props.data.allMarkdownRemark.edges

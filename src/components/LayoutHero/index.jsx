@@ -1,10 +1,12 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import { NavigationBar, HeaderBanner, MenuBar } from '@components'
+import NavigationBar from 'components/NavigationBar'
+import HeaderBanner from 'components/HeaderBanner'
+import MenuBar from 'components/MenuBar'
 import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
-import GlobalStyles from '@styles/global'
+import GlobalStyles from 'styles/global'
 import * as S from './styled'
 
 const LayoutHero = ({ title, bannerTags, noBanner, children, ...props }) => (

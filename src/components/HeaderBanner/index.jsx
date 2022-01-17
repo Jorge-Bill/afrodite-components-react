@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import LazyLoad from 'react-lazyload'
 
-import { Loader } from '@components'
+import Loader from 'components/Loader'
 
 import * as S from './styled'
 

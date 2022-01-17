@@ -3,9 +3,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { graphql } from 'gatsby'
-import { LayoutCustom, RecomendedPosts, Comments, Seo } from '@components'
+import LayoutCustom from 'components/LayoutCustom'
+import RecomendedPosts from 'components/RecomendedPosts'
+import Comments from 'components/Comments'
+import Seo from 'components/Seo'
 
-import * as S from '@styles/post'
+import * as S from 'styles/post'
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
