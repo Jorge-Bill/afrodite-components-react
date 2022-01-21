@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const ProfileWrapper = styled.section`
   ${({ size }) => css`
@@ -21,7 +20,7 @@ export const ProfileWrapper = styled.section`
   `}
 `
 
-export const ProfileLink = styled(AniLink)`
+export const ProfileLink = styled(a)`
   color: var(--texts);
   text-decoration: none;
   text-align: center;

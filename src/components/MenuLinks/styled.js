@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const MenuLinksWrapper = styled.nav`
   ${({ variant }) => css`
@@ -51,7 +50,7 @@ export const MenuLinksItem = styled.li`
   `}
 `
 
-export const MenuLinksLink = styled(AniLink)`
+export const MenuLinksLink = styled(a)`
   color: var(--texts);
   text-decoration: none;
   text-transform: uppercase;

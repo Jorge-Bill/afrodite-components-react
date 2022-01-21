@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { random } from 'utils/random'
+import random from 'utils/random'
 import getThemeColor from 'utils/getThemeColor'
 import PropTypes from 'prop-types'
 import links from './content'

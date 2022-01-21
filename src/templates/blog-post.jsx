@@ -2,7 +2,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import { graphql } from 'gatsby'
 import LayoutCustom from 'components/LayoutCustom'
 import RecomendedPosts from 'components/RecomendedPosts'
 import Comments from 'components/Comments'
@@ -10,7 +9,7 @@ import Seo from 'components/Seo'
 
 import * as S from 'styles/post'
 
-const BlogPost = ({ data, pageContext }) => {
+const BlogPost = ({ data, pageContext, post }) => {
   const post = data.markdownRemark
   const next = pageContext.nextPost
   const previous = pageContext.previousPost
@@ -36,25 +35,8 @@ const BlogPost = ({ data, pageContext }) => {
 
 BlogPost.propTypes = {
   data: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
-  pageContext: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired
+  pageContext: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
+  post: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired
 }
-
-export const query = graphql`
-  query Post($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        description
-        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-        image
-      }
-      html
-      timeToRead
-    }
-  }
-`
 
 export default BlogPost

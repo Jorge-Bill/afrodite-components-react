@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const PostCardWrapper = styled.section`
   display: flex;
@@ -13,7 +12,7 @@ export const PostCardWrapper = styled.section`
   `}
 `
 
-export const PostCardItem = styled(AniLink)`
+export const PostCardItem = styled(a)`
   border: 1px solid var(--mediumBackground);
   box-shadow: 0 1px 10px rgb(29 34 47 / 10%);
   background: var(--mediumBackground);

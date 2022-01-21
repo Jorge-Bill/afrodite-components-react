@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { random } from 'utils/random'
+import random from 'utils/random'
 
 import PropTypes from 'prop-types'
 

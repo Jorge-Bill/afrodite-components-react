@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import NavigationBar from 'components/NavigationBar'
 import HeaderBanner from 'components/HeaderBanner'
 import MenuBar from 'components/MenuBar'
-import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
 import GlobalStyles from 'styles/global'
 import * as S from './styled'
@@ -12,7 +11,6 @@ import * as S from './styled'
 const LayoutHero = ({ title, bannerTags, noBanner, children, ...props }) => (
   <S.LayoutHeroWrapper {...props}>
     <GlobalStyles />
-    <TransitionPortal level="top">
       <NavigationBar
         variant="navbar"
         profileSize="small"
@@ -22,12 +20,9 @@ const LayoutHero = ({ title, bannerTags, noBanner, children, ...props }) => (
         firstMenu
         socialSize="small"
       />
-    </TransitionPortal>
     {!noBanner && <HeaderBanner title={title} tags={bannerTags} />}
     <S.LayoutHeroMain>{children}</S.LayoutHeroMain>
-    <TransitionPortal level="top">
       <MenuBar variant="bottom" size="small" />
-    </TransitionPortal>
   </S.LayoutHeroWrapper>
 )
 

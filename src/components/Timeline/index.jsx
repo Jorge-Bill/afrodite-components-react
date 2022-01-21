@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import { Github } from '@styled-icons/boxicons-logos/Github'
-import { random } from 'utils/random'
+import random from 'utils/random'
 import Icons from '../SocialLinks/Icons'
 
 import * as S from './styled'
