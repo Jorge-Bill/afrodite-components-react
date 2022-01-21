@@ -262,7 +262,7 @@ var ProfileWrapper = external_styled_components_default.a.section.withConfig({
   var size = _ref.size;
   return Object(external_styled_components_["css"])(["color:var(--texts);display:flex;flex-direction:column;", ";", ""], size === 'small' && "\n    width: 20vw;\n  ", external_styled_media_query_default.a.lessThan('large')(Profile_styled_templateObject || (Profile_styled_templateObject = Profile_styled_taggedTemplateLiteral(["\n    display: flex;\n    text-align: left;\n    width: auto;\n  "]))));
 });
-var ProfileLink = external_styled_components_default()(a).withConfig({
+var ProfileLink = external_styled_components_default.a.a.withConfig({
   displayName: "styled__ProfileLink"
 })(["color:var(--texts);text-decoration:none;text-align:center;transition:color 0.5s;&:hover{color:var(--highlight);}"]);
 var ProfileAuthor = external_styled_components_default.a.h1.withConfig({
@@ -508,7 +508,7 @@ var MenuLinksItem = external_styled_components_default.a.li.withConfig({
   var variant = _ref3.variant;
   return Object(external_styled_components_["css"])(["padding:0.5rem 0;.active{color:var(--highlight);}", ";"], variant === 'inline' && "\n    padding: 0 0.3rem;\n\n    &:first-child{\n      padding-left: 0;\n    }\n\n    &:last-child {\n      padding-right: 0;\n    }\n  ");
 });
-var MenuLinksLink = external_styled_components_default()(a).withConfig({
+var MenuLinksLink = external_styled_components_default.a.a.withConfig({
   displayName: "styled__MenuLinksLink"
 })(["color:var(--texts);text-decoration:none;text-transform:uppercase;transition:color 0.5s;&:hover{color:var(--highlight);}"]);
 // CONCATENATED MODULE: ./src/components/MenuLinks/index.jsx
@@ -705,7 +705,7 @@ var MenuBarGroup = external_styled_components_default.a.div.withConfig({
   var variant = _ref2.variant;
   return Object(external_styled_components_["css"])(["display:flex;flex-direction:column;", " ", ";"], external_styled_media_query_default.a.lessThan('large')(MenuBar_styled_templateObject2 || (MenuBar_styled_templateObject2 = MenuBar_styled_taggedTemplateLiteral(["\n      flex-direction: row;\n    "]))), variant === 'bottom' && "\n      flex-direction: row;\n    ");
 });
-var MenuBarLink = external_styled_components_default()(a).withConfig({
+var MenuBarLink = external_styled_components_default.a.a.withConfig({
   displayName: "styled__MenuBarLink"
 })(["display:block;&.active{span{color:var(--highlight);}}"]);
 var MenuBarItem = external_styled_components_default.a.span.withConfig({
@@ -1114,7 +1114,7 @@ function PostItem_styled_taggedTemplateLiteral(strings, raw) { if (!raw) { raw =
 
 
 
-var PostItemLink = external_styled_components_default()(a).withConfig({
+var PostItemLink = external_styled_components_default.a.a.withConfig({
   displayName: "styled__PostItemLink"
 })(["color:var(--texts);display:flex;text-decoration:none;body#grid &{background-color:var(--background);}&:hover{color:var(--postColor);}"]);
 var PostItemWrapper = external_styled_components_default.a.section.withConfig({
@@ -1194,7 +1194,7 @@ function PostCard_styled_taggedTemplateLiteral(strings, raw) { if (!raw) { raw =
 var PostCardWrapper = external_styled_components_default.a.section.withConfig({
   displayName: "styled__PostCardWrapper"
 })(["display:flex;flex-wrap:wrap;justify-content:space-evenly;", ""], external_styled_media_query_default.a.lessThan('large')(PostCard_styled_templateObject || (PostCard_styled_templateObject = PostCard_styled_taggedTemplateLiteral(["\n    flex-direction: column;\n    padding: .8rem;\n  "]))));
-var PostCardItem = external_styled_components_default()(a).withConfig({
+var PostCardItem = external_styled_components_default.a.a.withConfig({
   displayName: "styled__PostCardItem"
 })(["border:1px solid var(--mediumBackground);box-shadow:0 1px 10px rgb(29 34 47 / 10%);background:var(--mediumBackground);text-decoration:none;white-space:normal;border-radius:4px;margin-top:1rem;transition:0.3s;text-align:left;cursor:pointer;max-width:33%;&:hover{border:1px solid var(--highlight);background-image:linear-gradient(to right,var(--timelineColor) 0%,var(--mediumBackground) 100%);}", " ", ""], external_styled_media_query_default.a.lessThan('large')(PostCard_styled_templateObject2 || (PostCard_styled_templateObject2 = PostCard_styled_taggedTemplateLiteral(["\n    max-width: 100%;\n    margin-top: 0;\n    margin-bottom: .8rem;\n\n    &:last-child{\n      margin-bottom: 0;\n    }\n  "]))), external_styled_media_query_default.a.greaterThan('huge')(PostCard_styled_templateObject3 || (PostCard_styled_templateObject3 = PostCard_styled_taggedTemplateLiteral(["\n    width: 300px;\n  "]))));
 var PostCardImage = external_styled_components_default.a.img.withConfig({
@@ -1272,7 +1272,7 @@ function RecomendedPosts_styled_taggedTemplateLiteral(strings, raw) { if (!raw) 
 var RecommendedWrapper = external_styled_components_default.a.section.withConfig({
   displayName: "styled__RecommendedWrapper"
 })(["border-bottom:1px solid var(--borders);border-top:1px solid var(--borders);background:var(--mediumBackground);display:flex;", ""], external_styled_media_query_default.a.lessThan('large')(RecomendedPosts_styled_templateObject || (RecomendedPosts_styled_templateObject = RecomendedPosts_styled_taggedTemplateLiteral(["\n    padding: 2rem 1rem;\n    line-height: 1.3;\n    font-size: .9rem;\n  "]))));
-var RecommendedLink = external_styled_components_default()(a).withConfig({
+var RecommendedLink = external_styled_components_default.a.a.withConfig({
   displayName: "styled__RecommendedLink"
 })(["align-items:center;background:var(--mediumBackground);color:var(--highlight);display:flex;padding:3rem;text-decoration:none;transition:background 0.5s;width:50%;&:hover{background:var(--borders);}&.previous{border-right:1px solid var(--borders);}&.next{justify-content:flex-end;}&.previous:before{content:'\\2190';margin-right:0.5rem;}&.next:after{content:'\\2192';margin-left:0.5rem;}"]);
 // CONCATENATED MODULE: ./src/components/RecomendedPosts/index.jsx
