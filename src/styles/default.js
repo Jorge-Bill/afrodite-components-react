@@ -211,7 +211,7 @@ export const MainContent = styled.section`
     }
   }
 
-  .carousel-root{
+  .carousel-root {
     ul {
       li {
         padding: 0;
@@ -273,7 +273,6 @@ export const CustomCard = styled(Card)`
     line-height: 1.4rem;
   }
 
-
   &:hover {
     background-color: var(--highlight);
   }
@@ -285,7 +284,7 @@ export const CustomCard = styled(Card)`
   margin: 1rem;
 
   .mg-r {
-      margin-right: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   ${media.lessThan('large')`
@@ -333,9 +332,9 @@ export const DataTable = styled.table`
     font-weight: bold;
   }
 
-  td, th {
+  td,
+  th {
     border: 1px solid var(--mediumBackground);
     padding: 10px;
   }
-
 `

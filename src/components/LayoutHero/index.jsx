@@ -11,18 +11,18 @@ import * as S from './styled'
 const LayoutHero = ({ title, bannerTags, noBanner, children, ...props }) => (
   <S.LayoutHeroWrapper {...props}>
     <GlobalStyles />
-      <NavigationBar
-        variant="navbar"
-        profileSize="small"
-        profileAvatar={false}
-        profileDescription={false}
-        menuLinksDisplay="inline"
-        firstMenu
-        socialSize="small"
-      />
+    <NavigationBar
+      variant="navbar"
+      profileSize="small"
+      profileAvatar={false}
+      profileDescription={false}
+      menuLinksDisplay="inline"
+      firstMenu
+      socialSize="small"
+    />
     {!noBanner && <HeaderBanner title={title} tags={bannerTags} />}
     <S.LayoutHeroMain>{children}</S.LayoutHeroMain>
-      <MenuBar variant="bottom" size="small" />
+    <MenuBar variant="bottom" size="small" />
   </S.LayoutHeroWrapper>
 )
 

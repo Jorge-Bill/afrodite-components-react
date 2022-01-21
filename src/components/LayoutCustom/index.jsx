@@ -10,9 +10,9 @@ import * as S from './styled'
 const LayoutCustom = ({ children }) => (
   <S.LayoutWrapper>
     <GlobalStyles />
-      <NavigationBar />
+    <NavigationBar />
     <S.LayoutMain>{children}</S.LayoutMain>
-      <MenuBar />
+    <MenuBar />
   </S.LayoutWrapper>
 )
 
