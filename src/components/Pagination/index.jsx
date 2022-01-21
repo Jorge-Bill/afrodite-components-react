@@ -8,7 +8,7 @@ import * as S from './styled'
 const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage }) => (
   <S.PaginationWrapper>
     {!isFirst && (
-      <a cover direction="left" title="Previous page" bg={getThemeColor()} duration={0.6} to={prevPage}>
+      <a cover direction="left" title="Previous page" bg={getThemeColor()} duration={0.6} href={prevPage}>
         ← Previous Page
       </a>
     )}
@@ -16,7 +16,7 @@ const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage
       {currentPage} of {numPages}
     </p>
     {!isLast && (
-      <a cover title="next page" direction="right" bg={getThemeColor()} duration={0.6} to={nextPage}>
+      <a cover title="next page" direction="right" bg={getThemeColor()} duration={0.6} href={nextPage}>
         Next Page →
       </a>
     )}

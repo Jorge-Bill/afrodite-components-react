@@ -16,7 +16,7 @@ const PostCard = ({ data, ...props }) => (
           fields: { slug }
         }
       }) => (
-        <S.PostCardItem key={id} to={slug} title={title} cover direction="right" bg={getThemeColor()} duration={0.6}>
+        <S.PostCardItem key={id} href={slug} title={title} cover direction="right" bg={getThemeColor()} duration={0.6}>
           <S.PostCardImage src={`/${thumbnail}`} alt={title} background={background} />
           <S.PostCardContent>
             <S.PostCardTitle>{title}</S.PostCardTitle>

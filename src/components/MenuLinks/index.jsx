@@ -17,7 +17,7 @@ const MenuLinks = ({ className, variant, ...props }) => (
             direction="left"
             bg={getThemeColor()}
             duration={0.6}
-            to={link.url}
+            href={link.url}
             activeClassName="active"
           >
             {link.label}

@@ -9,7 +9,7 @@ const RecomendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
     {previous && (
       <S.RecommendedLink
-        to={previous.fields.slug}
+        href={previous.fields.slug}
         cover
         direction="left"
         bg={getThemeColor()}
@@ -21,7 +21,7 @@ const RecomendedPosts = ({ next, previous }) => (
     )}
     {next && (
       <S.RecommendedLink
-        to={next.fields.slug}
+        href={next.fields.slug}
         cover
         direction="right"
         bg={getThemeColor()}

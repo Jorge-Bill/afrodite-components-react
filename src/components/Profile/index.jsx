@@ -10,7 +10,7 @@ import * as S from './styled'
 const Profile = ({ size, showAvatar, showDescription, title, position, description, ...props }) => {
   return (
     <S.ProfileWrapper size={size} {...props}>
-      <S.ProfileLink to="/" cover direction="left" bg={getThemeColor()} duration={0.6}>
+      <S.ProfileLink href="/" cover direction="left" bg={getThemeColor()} duration={0.6}>
         {showAvatar && <Avatar />}
         <S.ProfileAuthor>
           {title}

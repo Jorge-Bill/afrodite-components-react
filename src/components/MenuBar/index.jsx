@@ -25,7 +25,7 @@ const MenuBar = ({ variant, ...props }) => {
     <S.MenuBarWrapper variant={variant} {...props}>
       <S.MenuBarGroup variant={variant}>
         <S.MenuBarLink
-          to="/"
+          href="/"
           title="Back to Home"
           cover
           direction="right"
@@ -38,7 +38,7 @@ const MenuBar = ({ variant, ...props }) => {
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
-          to="/posts/"
+          href="/posts/"
           title="Go to Home"
           cover
           direction="right"
@@ -52,7 +52,7 @@ const MenuBar = ({ variant, ...props }) => {
         </S.MenuBarLink>
 
         <S.MenuBarLink
-          to="/about/"
+          href="/about/"
           title="Go to About"
           cover
           direction="right"
@@ -65,7 +65,7 @@ const MenuBar = ({ variant, ...props }) => {
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
-          to="/search/"
+          href="/search/"
           title="Go to Search"
           cover
           direction="right"
