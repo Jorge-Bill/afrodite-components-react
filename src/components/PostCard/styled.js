@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const PostCardWrapper = styled.section`
   display: flex;
@@ -10,9 +10,9 @@ export const PostCardWrapper = styled.section`
     flex-direction: column;
     padding: .8rem;
   `}
-`
+`;
 
-export const PostCardItem = styled(a)`
+export const PostCardItem = styled.a`
   border: 1px solid var(--mediumBackground);
   box-shadow: 0 1px 10px rgb(29 34 47 / 10%);
   background: var(--mediumBackground);
@@ -43,7 +43,7 @@ export const PostCardItem = styled(a)`
   ${media.greaterThan('huge')`
     width: 300px;
   `}
-`
+`;
 
 export const PostCardImage = styled.img`
   object-fit: cover;
@@ -53,15 +53,15 @@ export const PostCardImage = styled.img`
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom: 1px solid var(--mediumBackground);
-  background-image: linear-gradient(-20deg, ${props => props.background} 0%, var(--highlight) 100%);
-`
+  background-image: linear-gradient(-20deg, ${(props) => props.background} 0%, var(--highlight) 100%);
+`;
 
 export const PostCardContent = styled.div`
   padding: 1rem;
   p {
     margin: 0;
   }
-`
+`;
 
 export const PostCardTitle = styled.h6`
   color: var(--postColor);
@@ -71,7 +71,7 @@ export const PostCardTitle = styled.h6`
   line-height: 1.4rem;
   margin-bottom: 1rem;
   height: 70px;
-`
+`;
 
 export const PostCardDesc = styled.p`
   font-size: 0.85rem;
@@ -81,7 +81,7 @@ export const PostCardDesc = styled.p`
   height: 60px;
   color: var(--texts);
   margin: 0;
-`
+`;
 
 export const PostCardInfo = styled.div`
   p {
@@ -90,4 +90,4 @@ export const PostCardInfo = styled.div`
     color: var(--postColor);
     margin: 1rem;
   }
-`
+`;

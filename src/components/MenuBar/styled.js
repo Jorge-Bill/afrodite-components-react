@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const MenuBarWrapper = styled.aside`
   ${({ variant }) => css`
@@ -24,8 +24,8 @@ export const MenuBarWrapper = styled.aside`
       width: 100vw;
     `};
 
-    ${variant === 'bottom' &&
-    `
+    ${variant === 'bottom'
+    && `
       width: 100vw;
       height: 3.75rem;
       flex-direction: row;
@@ -34,7 +34,7 @@ export const MenuBarWrapper = styled.aside`
       bottom: 0;
     `};
   `}
-`
+`;
 
 export const MenuBarGroup = styled.div`
   ${({ variant }) => css`
@@ -45,14 +45,14 @@ export const MenuBarGroup = styled.div`
       flex-direction: row;
     `}
 
-    ${variant === 'bottom' &&
-    `
+    ${variant === 'bottom'
+    && `
       flex-direction: row;
     `};
   `}
-`
+`;
 
-export const MenuBarLink = styled(a)`
+export const MenuBarLink = styled.a`
   display: block;
 
   &.active {
@@ -60,7 +60,7 @@ export const MenuBarLink = styled(a)`
       color: var(--highlight);
     }
   }
-`
+`;
 
 export const MenuBarItem = styled.span`
   color: var(--texts);
@@ -99,4 +99,4 @@ export const MenuBarItem = styled.span`
     position: relative;
     width: 3.2rem;
   `}
-`
+`;

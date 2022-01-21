@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from 'styled-components';
+import media from 'styled-media-query';
 
-export const PostItemLink = styled(a)`
+export const PostItemLink = styled.a`
   color: var(--texts);
   display: flex;
   text-decoration: none;
@@ -13,7 +13,7 @@ export const PostItemLink = styled(a)`
   &:hover {
     color: var(--postColor);
   }
-`
+`;
 
 export const PostItemWrapper = styled.section`
   align-items: center;
@@ -40,7 +40,7 @@ export const PostItemWrapper = styled.section`
   &:hover {
     background-image: linear-gradient(to right, var(--timelineColor) 0%, var(--mediumBackground) 100%);
   }
-`
+`;
 
 export const PostItemTag = styled.div`
   align-items: center;
@@ -49,7 +49,7 @@ export const PostItemTag = styled.div`
   min-height: 90px;
   min-width: 90px;
 
-  border: 2px solid ${props => (props.background ? props.background : 'var(--highlight)')};
+  border: 2px solid ${(props) => (props.background ? props.background : 'var(--highlight)')};
   border-radius: 50%;
   box-shadow: 0 1px 10px rgb(29 34 47 / 10%);
 
@@ -70,7 +70,7 @@ export const PostItemTag = styled.div`
   body#grid & {
     margin-bottom: 1.5rem;
   }
-`
+`;
 
 export const PostItemInfo = styled.div`
   display: flex;
@@ -85,20 +85,20 @@ export const PostItemInfo = styled.div`
   ${media.lessThan('large')`
     margin: 0;
   `}
-`
+`;
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
-`
+`;
 
 export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
-`
+`;
 
 export const PostItemDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
-`
+`;

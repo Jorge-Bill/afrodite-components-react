@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const MenuLinksWrapper = styled.nav`
   ${({ variant }) => css`
-    ${variant === 'inline' &&
-    `
+    ${variant === 'inline'
+    && `
     display: flex;
   `};
 
@@ -12,21 +12,21 @@ export const MenuLinksWrapper = styled.nav`
     display: none;
   `};
   `}
-`
+`;
 
 export const MenuLinksList = styled.ul`
   ${({ variant }) => css`
     font-size: 1.2rem;
     font-weight: 300;
 
-    ${variant === 'inline' &&
-    `
+    ${variant === 'inline'
+    && `
     display: flex;
     align-items: center;
     justify-content: space-around;
   `};
   `}
-`
+`;
 
 export const MenuLinksItem = styled.li`
   ${({ variant }) => css`
@@ -35,8 +35,8 @@ export const MenuLinksItem = styled.li`
       color: var(--highlight);
     }
 
-    ${variant === 'inline' &&
-    `
+    ${variant === 'inline'
+    && `
     padding: 0 0.3rem;
 
     &:first-child{
@@ -48,9 +48,9 @@ export const MenuLinksItem = styled.li`
     }
   `};
   `}
-`
+`;
 
-export const MenuLinksLink = styled(a)`
+export const MenuLinksLink = styled.a`
   color: var(--texts);
   text-decoration: none;
   text-transform: uppercase;
@@ -59,4 +59,4 @@ export const MenuLinksLink = styled(a)`
   &:hover {
     color: var(--highlight);
   }
-`
+`;

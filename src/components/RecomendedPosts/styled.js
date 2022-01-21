@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);
@@ -12,9 +12,9 @@ export const RecommendedWrapper = styled.section`
     line-height: 1.3;
     font-size: .9rem;
   `}
-`
+`;
 
-export const RecommendedLink = styled(a)`
+export const RecommendedLink = styled.a`
   align-items: center;
   background: var(--mediumBackground);
   color: var(--highlight);
@@ -40,4 +40,4 @@ export const RecommendedLink = styled(a)`
     content: '\\2192';
     margin-left: 0.5rem;
   }
-`
+`;
