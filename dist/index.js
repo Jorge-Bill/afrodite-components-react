@@ -299,9 +299,7 @@ var Profile_Profile = function Profile(_ref) {
   return /*#__PURE__*/external_react_default.a.createElement(ProfileWrapper, _extends({
     size: size
   }, props), /*#__PURE__*/external_react_default.a.createElement(ProfileLink, {
-    href: "/",
-    bg: utils_getThemeColor(),
-    duration: 0.6
+    href: "/"
   }, showAvatar && /*#__PURE__*/external_react_default.a.createElement(components_Avatar, null), /*#__PURE__*/external_react_default.a.createElement(ProfileAuthor, null, title, /*#__PURE__*/external_react_default.a.createElement(ProfilePosition, null, position))), showDescription && /*#__PURE__*/external_react_default.a.createElement(ProfileDescription, null, description));
 };
 
