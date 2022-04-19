@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import media from 'styled-media-query';
+import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const ProfileWrapper = styled.section`
   ${({ size }) => css`
@@ -7,8 +7,8 @@ export const ProfileWrapper = styled.section`
     display: flex;
     flex-direction: column;
 
-    ${size === 'small'
-    && `
+    ${size === 'small' &&
+    `
     width: 20vw;
   `};
 
@@ -18,7 +18,7 @@ export const ProfileWrapper = styled.section`
     width: auto;
   `}
   `}
-`;
+`
 
 export const ProfileLink = styled.a`
   color: var(--texts);
@@ -29,7 +29,7 @@ export const ProfileLink = styled.a`
   &:hover {
     color: var(--highlight);
   }
-`;
+`
 
 export const ProfileAuthor = styled.h1`
   font-size: 1.4rem;
@@ -40,7 +40,7 @@ export const ProfileAuthor = styled.h1`
     font-size: 1.2rem;
     margin: 0 0 0 10px;
   `}
-`;
+`
 
 export const ProfilePosition = styled.small`
   display: block;
