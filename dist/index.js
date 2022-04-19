@@ -108,12 +108,10 @@ __webpack_require__.d(__webpack_exports__, "PostItem", function() { return /* re
 __webpack_require__.d(__webpack_exports__, "PostCard", function() { return /* reexport */ components_PostCard; });
 __webpack_require__.d(__webpack_exports__, "Profile", function() { return /* reexport */ components_Profile; });
 __webpack_require__.d(__webpack_exports__, "RecomendedPosts", function() { return /* reexport */ components_RecomendedPosts; });
-__webpack_require__.d(__webpack_exports__, "Search", function() { return /* reexport */ components_Search; });
 __webpack_require__.d(__webpack_exports__, "NavigationBar", function() { return /* reexport */ components_NavigationBar; });
 __webpack_require__.d(__webpack_exports__, "SocialLinks", function() { return /* reexport */ components_SocialLinks; });
 __webpack_require__.d(__webpack_exports__, "SwUpdater", function() { return /* reexport */ components_SwUpdater; });
 __webpack_require__.d(__webpack_exports__, "Timeline", function() { return /* reexport */ components_Timeline; });
-__webpack_require__.d(__webpack_exports__, "KanbanBoard", function() { return /* reexport */ components_KanbanBoard; });
 __webpack_require__.d(__webpack_exports__, "Skills", function() { return /* reexport */ components_Skills; });
 __webpack_require__.d(__webpack_exports__, "Seo", function() { return /* reexport */ components_Seo; });
 __webpack_require__.d(__webpack_exports__, "random", function() { return /* reexport */ utils_random; });
@@ -1324,82 +1322,6 @@ RecomendedPosts_RecomendedPosts.defaultProps = {
   previous: ''
 };
 /* harmony default export */ var components_RecomendedPosts = (RecomendedPosts_RecomendedPosts);
-// EXTERNAL MODULE: external "algoliasearch/lite"
-var lite_ = __webpack_require__("algoliasearch/lite");
-var lite_default = /*#__PURE__*/__webpack_require__.n(lite_);
-
-// EXTERNAL MODULE: external "react-instantsearch-dom"
-var external_react_instantsearch_dom_ = __webpack_require__("react-instantsearch-dom");
-
-// CONCATENATED MODULE: ./src/components/Search/Hit.jsx
-
-
-
-
-var Hit_Hit = function Hit(_ref) {
-  var hit = _ref.hit;
-  return /*#__PURE__*/external_react_default.a.createElement(components_PostItem, {
-    slug: hit.fields.slug,
-    background: hit.background,
-    title: hit.title,
-    date: hit.date,
-    description: hit.description,
-    category: hit.category,
-    timeToRead: hit.timeToRead
-  });
-};
-
-Hit_Hit.propTypes = {
-  hit: external_prop_types_default.a.oneOfType([external_prop_types_default.a.object, external_prop_types_default.a.array]).isRequired
-};
-/* harmony default export */ var Search_Hit = (Hit_Hit);
-// CONCATENATED MODULE: ./src/components/Search/styled.js
-var Search_styled_templateObject;
-
-function Search_styled_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-
-
-var SearchWrapper = external_styled_components_default.a.section.withConfig({
-  displayName: "styled__SearchWrapper"
-})(["background:var(--background);display:flex;flex-direction:column;width:100%;transition:opacity 0.4s;.ais-InstantSearch__root{display:flex;flex-direction:column;height:auto;width:100%;}.ais-SearchBox,.ais-Stats{padding:0.5rem 3rem;", "}body#grid &{.ais-Hits-list{background-color:var(--borders);border-bottom:1px solid var(--borders);border-top:1px solid var(--borders);display:grid;grid-area:card;grid-gap:1px;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));margin-top:2rem;}.ais-Hits-item{background-color:var(--background);}}.ais-SearchBox{padding-top:2rem;}.ais-Stats{color:white;}.ais-SearchBox-input{background:var(--mediumBackground);border:1px solid var(--borders);border-radius:3px;border-bottom:1px solid var(--borders);color:var(--texts);display:flex;font-size:1.6rem;padding:0.5rem;width:100%;&::placeholder{color:var(--texts);}}.ais-SearchBox-submit,.ais-SearchBox-reset{display:none;}"], external_styled_media_query_default.a.lessThan('large')(Search_styled_templateObject || (Search_styled_templateObject = Search_styled_taggedTemplateLiteral(["\n      padding: 0.5rem 1rem;\n    "]))));
-var resultsMsg = external_styled_components_default.a.p.withConfig({
-  displayName: "styled__resultsMsg"
-})(["color:var(--texts);"]);
-// CONCATENATED MODULE: ./src/components/Search/index.jsx
-
-
-
-
-
-
-
-var Search_Search = function Search(_ref) {
-  var algolia = _ref.algolia;
-  var searchClient = lite_default()(algolia.appId, algolia.searchOnlyApiKey);
-  return /*#__PURE__*/external_react_default.a.createElement(SearchWrapper, null, /*#__PURE__*/external_react_default.a.createElement(external_react_instantsearch_dom_["InstantSearch"], {
-    searchClient: searchClient,
-    indexName: algolia.indexName
-  }, /*#__PURE__*/external_react_default.a.createElement(external_react_instantsearch_dom_["SearchBox"], {
-    autoFocus: true,
-    translations: {
-      placeholder: 'Search...'
-    }
-  }), /*#__PURE__*/external_react_default.a.createElement(external_react_instantsearch_dom_["Stats"], {
-    translations: {
-      stats: function stats(nbHits, timeSpentMs) {
-        return /*#__PURE__*/external_react_default.a.createElement(resultsMsg, null, nbHits, " results found in ", timeSpentMs, "ms");
-      }
-    }
-  }), /*#__PURE__*/external_react_default.a.createElement(external_react_instantsearch_dom_["Hits"], {
-    hitComponent: Search_Hit
-  })));
-};
-
-Search_Search.propTypes = {
-  algolia: external_prop_types_default.a.oneOfType([external_prop_types_default.a.object, external_prop_types_default.a.array]).isRequired
-};
-/* harmony default export */ var components_Search = (Search_Search);
 // EXTERNAL MODULE: external "@styled-icons/boxicons-regular/Refresh"
 var Refresh_ = __webpack_require__("@styled-icons/boxicons-regular/Refresh");
 
@@ -1489,57 +1411,6 @@ Timeline_Timeline.propTypes = {
   data: external_prop_types_default.a.oneOfType([external_prop_types_default.a.object, external_prop_types_default.a.array]).isRequired
 };
 /* harmony default export */ var components_Timeline = (Timeline_Timeline);
-// EXTERNAL MODULE: external "react-trello"
-var external_react_trello_ = __webpack_require__("react-trello");
-var external_react_trello_default = /*#__PURE__*/__webpack_require__.n(external_react_trello_);
-
-// CONCATENATED MODULE: ./src/components/KanbanBoard/styled.js
-
-var Wrapper = external_styled_components_default.a.div.withConfig({
-  displayName: "styled__Wrapper"
-})([".react-trello-board{background-image:url('https://jorgemendes.com.br/static/37c462c46e4a5cb93631ec225343cb6c/416c3/icon.webp');background-repeat:no-repeat;background-position:center center;background-size:auto;background-color:var(--mediumBackground);border:1px solid var(--borders);border-radius:4px;}.react-trello-lane{background-color:var(--background);color:var(--highlight);box-shadow:0 1px 10px rgb(29 34 47 / 10%);}.react-trello-card{border:1px solid var(--mediumBackground);}"]);
-/* harmony default export */ var KanbanBoard_styled = (Wrapper);
-// CONCATENATED MODULE: ./src/components/KanbanBoard/index.jsx
-var KanbanBoard_excluded = ["data", "editable", "canAddLanes", "editLaneTitle"];
-
-function KanbanBoard_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = KanbanBoard_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function KanbanBoard_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-
-var KanbanBoard_KanbanBoard = function KanbanBoard(_ref) {
-  var data = _ref.data,
-      editable = _ref.editable,
-      canAddLanes = _ref.canAddLanes,
-      editLaneTitle = _ref.editLaneTitle,
-      props = KanbanBoard_objectWithoutProperties(_ref, KanbanBoard_excluded);
-
-  return /*#__PURE__*/external_react_default.a.createElement(KanbanBoard_styled, props, /*#__PURE__*/external_react_default.a.createElement(external_react_trello_default.a, {
-    data: data,
-    editable: editable,
-    canAddLanes: canAddLanes,
-    editLaneTitle: editLaneTitle
-  }));
-};
-
-KanbanBoard_KanbanBoard.propTypes = {
-  data: external_prop_types_default.a.oneOfType([external_prop_types_default.a.object, external_prop_types_default.a.array]),
-  editable: external_prop_types_default.a.bool.isRequired,
-  canAddLanes: external_prop_types_default.a.bool,
-  editLaneTitle: external_prop_types_default.a.bool
-};
-KanbanBoard_KanbanBoard.defaultProps = {
-  data: {
-    lanes: []
-  },
-  canAddLanes: false,
-  editLaneTitle: false
-};
-/* harmony default export */ var components_KanbanBoard = (KanbanBoard_KanbanBoard);
 // EXTERNAL MODULE: external "@styled-icons/bootstrap/StarFill"
 var StarFill_ = __webpack_require__("@styled-icons/bootstrap/StarFill");
 
@@ -1699,11 +1570,9 @@ Seo.defaultProps = {
 styles and themes
 ******************** */
 
-/*********************
+/** *******************
     components
 ******************** */
-
-
 
 
 
@@ -1859,13 +1728,6 @@ module.exports = require("@styled-icons/zondicons/Education");
 
 /***/ }),
 
-/***/ "algoliasearch/lite":
-/***/ (function(module, exports) {
-
-module.exports = require("algoliasearch/lite");
-
-/***/ }),
-
 /***/ "prop-types":
 /***/ (function(module, exports) {
 
@@ -1894,24 +1756,10 @@ module.exports = require("react-helmet");
 
 /***/ }),
 
-/***/ "react-instantsearch-dom":
-/***/ (function(module, exports) {
-
-module.exports = require("react-instantsearch-dom");
-
-/***/ }),
-
 /***/ "react-lazyload":
 /***/ (function(module, exports) {
 
 module.exports = require("react-lazyload");
-
-/***/ }),
-
-/***/ "react-trello":
-/***/ (function(module, exports) {
-
-module.exports = require("react-trello");
 
 /***/ }),
 

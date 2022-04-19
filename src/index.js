@@ -2,7 +2,7 @@
 styles and themes
 ******************** */
 
-/*********************
+/** *******************
     components
 ******************** */
 
@@ -20,12 +20,10 @@ export { default as PostItem } from 'components/PostItem'
 export { default as PostCard } from 'components/PostCard'
 export { default as Profile } from 'components/Profile'
 export { default as RecomendedPosts } from 'components/RecomendedPosts'
-export { default as Search } from 'components/Search'
 export { default as NavigationBar } from 'components/NavigationBar'
 export { default as SocialLinks } from 'components/SocialLinks'
 export { default as SwUpdater } from 'components/SwUpdater'
 export { default as Timeline } from 'components/Timeline'
-export { default as KanbanBoard } from 'components/KanbanBoard'
 export { default as Skills } from 'components/Skills'
 export { default as Seo } from 'components/Seo'
 
