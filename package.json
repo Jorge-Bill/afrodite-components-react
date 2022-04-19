@@ -27,7 +27,6 @@
     }
   },
   "dependencies": {
-    "algoliasearch": "^4.11.0",
     "gsap": "^3.8.0",
     "lazysizes": "^5.3.2",
     "prismjs": "^1.25.0",
@@ -39,7 +38,6 @@
     "react-instantsearch-dom": "^6.15.0",
     "react-lazyload": "^3.2.0",
     "react-responsive-carousel": "^3.2.22",
-    "react-trello": "^2.2.11",
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.3",
     "styled-icons": "^10.45.0",
