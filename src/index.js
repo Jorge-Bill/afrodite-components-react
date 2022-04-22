@@ -1,6 +1,7 @@
 /* ********************
 styles and themes
 ******************** */
+export { default as themeDefault } from 'styles/global'
 
 /** *******************
     components

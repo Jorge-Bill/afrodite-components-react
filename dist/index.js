@@ -94,6 +94,7 @@
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
+__webpack_require__.d(__webpack_exports__, "themeDefault", function() { return /* reexport */ global; });
 __webpack_require__.d(__webpack_exports__, "Avatar", function() { return /* reexport */ components_Avatar; });
 __webpack_require__.d(__webpack_exports__, "Card", function() { return /* reexport */ components_Card; });
 __webpack_require__.d(__webpack_exports__, "Comments", function() { return /* reexport */ components_Comments; });
@@ -117,13 +118,17 @@ __webpack_require__.d(__webpack_exports__, "Seo", function() { return /* reexpor
 __webpack_require__.d(__webpack_exports__, "random", function() { return /* reexport */ utils_random; });
 __webpack_require__.d(__webpack_exports__, "getThemeColor", function() { return /* reexport */ utils_getThemeColor; });
 
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("react");
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-
 // EXTERNAL MODULE: external "styled-components"
 var external_styled_components_ = __webpack_require__("styled-components");
 var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
+
+// CONCATENATED MODULE: ./src/styles/global.js
+
+var GlobalStyles = Object(external_styled_components_["createGlobalStyle"])(["html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}*{box-sizing:border-box;}body{background:var(--highlight);line-height:1;font-size:100%;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";--darker:rgba(0,0,0,0.75);}img{display:block;width:100%;height:auto;}body.dark{--borders:#090909;--texts:#ff5252;--postColor:#f9f8eb;--highlight:#ff0000;--mediumBackground:#222831;--background:#393e46;--timelineColor:#a70000;--timelineLine:#ff0000;--timelineDate:#f9f8eb;--white:#fff;--black:#222;}body.light{--borders:#d0cece;--postColor:#111;--texts:#555555;--highlight:#ff0000;--mediumBackground:#dbdbde;--background:#fff;--timelineColor:#f0f0f3;--timelineLine:#ff0000;--timelineDate:#090909;--white:#fff;--black:#222;}"]);
+/* harmony default export */ var global = (GlobalStyles);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("react");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
 // CONCATENATED MODULE: ./src/components/Avatar/styled.js
 
@@ -228,25 +233,6 @@ Comments_Comments.propTypes = {
   title: external_prop_types_default.a.string.isRequired
 };
 /* harmony default export */ var components_Comments = (Comments_Comments);
-// CONCATENATED MODULE: ./src/utils/getThemeColor.js
-var getThemeColor = function getThemeColor() {
-  var theme = typeof window !== 'undefined' && window.__theme;
-  var dark = '#ff0000';
-  var light = '#f0f0f3';
-
-  switch (theme) {
-    case 'light':
-      return light;
-
-    case 'dark':
-      return dark;
-
-    default:
-      return dark;
-  }
-};
-
-/* harmony default export */ var utils_getThemeColor = (getThemeColor);
 // CONCATENATED MODULE: ./src/components/Profile/styled.js
 var Profile_styled_templateObject, styled_templateObject2, _templateObject3, _templateObject4;
 
@@ -280,7 +266,6 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function Profile_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Profile_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function Profile_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
 
 
 
@@ -462,6 +447,25 @@ var random_random = function random() {
 };
 
 /* harmony default export */ var utils_random = (random_random);
+// CONCATENATED MODULE: ./src/utils/getThemeColor.js
+var getThemeColor = function getThemeColor() {
+  var theme = typeof window !== 'undefined' && window.__theme;
+  var dark = '#ff0000';
+  var light = '#f0f0f3';
+
+  switch (theme) {
+    case 'light':
+      return light;
+
+    case 'dark':
+      return dark;
+
+    default:
+      return dark;
+  }
+};
+
+/* harmony default export */ var utils_getThemeColor = (getThemeColor);
 // CONCATENATED MODULE: ./src/components/MenuLinks/content.jsx
 var content_links = [{
   label: 'Home',
@@ -828,10 +832,6 @@ MenuBar_MenuBar.defaultProps = {
   variant: 'right'
 };
 /* harmony default export */ var components_MenuBar = (MenuBar_MenuBar);
-// CONCATENATED MODULE: ./src/styles/global.js
-
-var GlobalStyles = Object(external_styled_components_["createGlobalStyle"])(["html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}*{box-sizing:border-box;}body{background:var(--highlight);line-height:1;font-size:100%;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";--darker:rgba(0,0,0,0.75);}img{display:block;width:100%;height:auto;}body.dark{--borders:#090909;--texts:#ff5252;--postColor:#f9f8eb;--highlight:#ff0000;--mediumBackground:#222831;--background:#393e46;--timelineColor:#a70000;--timelineLine:#ff0000;--timelineDate:#f9f8eb;--white:#fff;--black:#222;}body.light{--borders:#d0cece;--postColor:#111;--texts:#555555;--highlight:#ff0000;--mediumBackground:#dbdbde;--background:#fff;--timelineColor:#f0f0f3;--timelineLine:#ff0000;--timelineDate:#090909;--white:#fff;--black:#222;}"]);
-/* harmony default export */ var global = (GlobalStyles);
 // CONCATENATED MODULE: ./src/components/LayoutCustom/styled.js
 var LayoutCustom_styled_templateObject, LayoutCustom_styled_templateObject2;
 
@@ -1569,6 +1569,7 @@ styles and themes
 /** *******************
     components
 ******************** */
+
 
 
 
